@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: inventory-ver1
-        image: public.ecr.aws/x2j8p8w7/http-server:latest
+        #image: public.ecr.aws/x2j8p8w7/http-server:latest
+        image: 133282075000.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-public/x2j8p8w7/http-server:latest 
         env:
         - name: PodName
           value: "Inventory-ver1 handler pod"

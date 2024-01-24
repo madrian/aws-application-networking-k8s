@@ -5292,7 +5292,8 @@ spec:
         - --upstream=http://127.0.0.1:8080/
         - --logtostderr=true
         - --v=10
-        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+        # image: gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+        image: 133282075000.dkr.ecr.ap-southeast-1.amazonaws.com/gcr.io.manual:latest
         name: kube-rbac-proxy
         ports:
         - containerPort: 8443
@@ -5304,7 +5305,8 @@ spec:
         - --leader-elect
         command:
         - /manager
-        image: public.ecr.aws/m7r9p7b3/aws-gateway-controller:v0.0.12
+        # image: public.ecr.aws/m7r9p7b3/aws-gateway-controller:v0.0.12
+        image: 133282075000.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-public/m7r9p7b3/aws-gateway-controller:v0.0.12
         livenessProbe:
           httpGet:
             path: /healthz
